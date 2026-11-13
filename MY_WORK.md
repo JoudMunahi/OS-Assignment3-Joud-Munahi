@@ -32,11 +32,11 @@
 
 | Field | Your Answer |
 |-------|-------------|
-| **Full Name** | [Write your full name here] |
-| **Student ID** | [Write your student ID here] |
-| **University Email** | [yourid]@std.psau.edu.sa |
-| **GitHub Username** | [your-github-username] |
-| **Repository Link** | [Paste your repository link here] |
+| **Full Name** | Joud Munahi Saad Alqhtani|
+| **Student ID** | 445052027 |
+| **University Email** | 445052027@std.psau.edu.sa |
+| **GitHub Username** | JoudMunahi |
+| **Repository Link** | (https://github.com/JoudMunahi/OS-Assignment3-Joud-Munahi) |
  
 ---
 
@@ -132,69 +132,105 @@
 
 ## Your Development Log
 
-### Entry 1 - [Date and Time]
-**What I did**:
+### Entry 1 - nov 13, 2026
+
+**What I did**: Created and prepared my GitHub repository.
 
 **Details**:
+- Forked the original assignment starter repository.
+- Created my own repository.
+- Prepared the project files for development.
 
 **Challenges**:
+Understanding the repository setup and the required project structure.
 
 **Solution**:
+Followed the assignment setup instructions and reviewed the repository files.
 
-**Time spent**:
+**Time spent**: 30 minutes
 
 ---
 
-### Entry 2 - [Date and Time]
-**What I did**:
+### Entry 2 - November 13, 2026, 11:58 PM
+
+**What I did**: Set my student ID in the Java program.
 
 **Details**:
+- Updated the studentID variable in SchedulerSimulationSync.java.
+- Saved the changes.
+- Committed and pushed the update to GitHub.
 
 **Challenges**:
+Making sure the correct student ID was used in the simulation.
 
 **Solution**:
+Checked the student ID value before committing the changes.
 
-**Time spent**:
+**Time spent**: 15 minutes
 
 ---
 
-### Entry 3 - [Date and Time]
-**What I did**:
+### Entry 3 - November 14, 2026, 12:34 AM
+
+**What I did**: Implemented Feature 1 by protecting the ready queue.
 
 **Details**:
+- Added a ReentrantLock to the ReadyQueue class.
+- Protected add(), poll(), processOf(), and snapshot().
+- Used try/finally to ensure the lock was released.
+- Compiled and tested the program.
 
 **Challenges**:
+Preventing multiple CPU threads from accessing the ready queue simultaneously.
 
 **Solution**:
+Used the same lock to protect all ready queue operations.
 
-**Time spent**:
+**Time spent**: 45 minutes
 
 ---
 
-### Entry 4 - [Date and Time]
-**What I did**:
+### Entry 4 - November 14, 2026, 12:53 AM
+
+**What I did**: Implemented Feature 2 by protecting shared statistics.
 
 **Details**:
+- Added a ReentrantLock to SharedStats.
+- Protected the context switch counter.
+- Protected the completed process counter.
+- Protected the total service time counter.
+- Tested the verification results.
 
 **Challenges**:
+Preventing race conditions when multiple CPU threads update shared statistics.
 
 **Solution**:
+Used a shared lock to protect the statistics update and read operations.
 
-**Time spent**:
+**Time spent**: 30 minutes
 
 ---
 
-### Entry 5 - [Date and Time]
-**What I did**:
+### Entry 5 - November 14, 2026, 1:31 AM
+
+**What I did**: Implemented Feature 3 using a counting semaphore.
 
 **Details**:
+- Added a Semaphore with an initial value of zero.
+- Used release() when adding processes to the ready queue.
+- Used acquire() to block CPU threads when the queue was empty.
+- Added wakeAll() for clean CPU shutdown.
+- Ran the program five consecutive times.
+- Confirmed that all four verification results passed.
+- Committed and pushed the final feature to GitHub.
 
 **Challenges**:
+Ensuring that waiting CPU threads terminate correctly after all processes are completed.
 
 **Solution**:
+Used the completed process count and wakeAll() to wake waiting CPU threads.
 
-**Time spent**:
-
+**Time spent**: 45 minutes
 ---
 
 ### Entry 6 - [Optional - Date and Time]
